@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.moving {
+  animation: movePath 2s ease-in-out infinite alternate;
+}
+
+@keyframes movePath {
+  0% {
+      d: path('M324 457h379v23H324zM400 82h262v23H400z');
+  }
+  100% {
+      d: path('M324 457h379v23H324zM400 82h262v23H400z'); /* Adjust the path data for movement */
+  }
+}
